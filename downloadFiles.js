@@ -2,7 +2,6 @@ const request = require('request');
 const fs = require('fs');
 
 const timeToWait = 1000; // in ms
-const name = 'Your_Name_Here'
 
 const aliasFileName = 'allAliases.json';
 const implicationFileName = 'allImplications.json';
@@ -37,7 +36,7 @@ downloadURL(aliasBaseURL, 'alias', function(aliasObject){
 function downloadURL(baseURL, identifier, callback){
 	let returnArray = [];
 	let counter = 0;
-	let options = {headers: { 'User-Agent': 'Tag tree/0.1 (by ' + name + ')' }}; // 
+	let options = {headers: { 'User-Agent': 'Tag tree v1.0 (created by idem)' }}; // 
 	var interval = setInterval(function(){ let tempStore = ++counter; // tempStore is to make pretty
 		options.url = baseURL + counter;
 		request(options, function(requestError, headers, response){

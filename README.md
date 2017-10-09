@@ -3,7 +3,6 @@
 Requires the `request` package
 
 # How to use
-  - Edit name in `downloadFiles.js`
   - Run `downloadFiles.js`
   - Run `createFiles.js`
 
